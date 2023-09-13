@@ -1,5 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import axios from "axios";
+import config from "../../config";
 import "./payment.css";
 import { Elements } from "@stripe/react-stripe-js";
 import CheckoutForm from "./CheckoutForm";
@@ -12,16 +13,18 @@ function Payment() {
   const { totalAmount } = useContext(AppContext);
 
   useEffect(() => {
-    fetch("http://localhost:4000/payment/config").then(async (res) => {
-      const { publishableKey } = await res.json();
-      setStripePromise(loadStripe(publishableKey));
-    });
+    fetch("https://pizza-backend-api-lvxo.onrender.com/payment/config").then(
+      async (res) => {
+        const { publishableKey } = await res.json();
+        setStripePromise(loadStripe(publishableKey));
+      }
+    );
   }, []);
   const fetchIntent = async () => {
     const totalInCents = totalAmount * 100;
 
     const response = await axios.post(
-      "http://localhost:4000/payment/create-payment-intent",
+      `https://pizza-backend-api-lvxo.onrender.com/payment/create-payment-intent`,
       { total: totalInCents }
     );
     setClientSecret(response?.data?.clientSecret);

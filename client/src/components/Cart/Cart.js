@@ -3,6 +3,7 @@ import { IoCloseOutline } from "react-icons/io5";
 import "./cart.css";
 import { AppContext } from "../Context/Context";
 import axios from "axios";
+import config from "../../config";
 import { Link } from "react-router-dom";
 
 const Cart = () => {
@@ -14,9 +15,7 @@ const Cart = () => {
     const fetchPizzas = async () => {
       try {
         const responses = await Promise.all(
-          cart?.pizzaIds?.map((id) =>
-            axios.get(`http://localhost:4000/api/${id}`)
-          )
+          cart?.pizzaIds?.map((id) => axios.get(`${config?.URL_BASE}/${id}`))
         );
         const fetchedData = responses.map((res) => {
           return {

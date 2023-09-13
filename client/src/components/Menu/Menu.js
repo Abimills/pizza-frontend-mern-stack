@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import PizzaCard from "../PizzaCard/PizzaCard";
+import config from "../../config";
 
 const Menu = () => {
   const [data, setData] = useState([]);
@@ -9,7 +10,8 @@ const Menu = () => {
   const [filteredData, setFilteredData] = useState([]);
 
   const fetch = async () => {
-    const res = await axios.get("http://localhost:4000/api/");
+    const res = await axios.get(`${config.URL_BASE}`);
+
     setData(res?.data);
   };
   const filterData = (data, category) => {
@@ -57,7 +59,6 @@ const Menu = () => {
       </div>
       <div className="pizza-card-container">
         {filteredData?.map((pizza) => {
-         
           return <PizzaCard pizza={pizza} key={pizza._id} />;
         })}
       </div>

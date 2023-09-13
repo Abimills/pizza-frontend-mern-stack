@@ -1,3 +1,4 @@
+import config from "../../config";
 import axios from "axios";
 import React, { useContext, useEffect, useState } from "react";
 import peel from "../../assets/images/pizzahandle.png";
@@ -14,7 +15,7 @@ const SinglePizza = () => {
 
   const fetch = async () => {
     try {
-      const res = await axios.get(`http://localhost:4000/api/${id}`);
+      const res = await axios.get(`${config?.URL_BASE}/${id}`);
       setData(res.data);
     } catch (error) {
       console.log({

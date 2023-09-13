@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import config from "../../config";
 import greener from "../../assets/images/greener.png";
 import blue2 from "../../assets/images/blue2.png";
 import paparika from "../../assets/images/paparika.png";
@@ -17,7 +18,7 @@ const LandingPage = () => {
   const [filteredData, setFilteredData] = useState([]);
   const [category, setCategory] = useState([]);
   const fetch = async () => {
-    const res = await axios.get("http://localhost:4000/api/");
+    const res = await axios.get(`${config?.URL_BASE}`);
     setData(res?.data);
   };
   const filterData = (data, category) => {
@@ -33,7 +34,7 @@ const LandingPage = () => {
       setActiveCategory(category);
     }
   };
-
+  
   useEffect(() => {
     fetch();
   }, []);

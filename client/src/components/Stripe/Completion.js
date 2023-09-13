@@ -1,5 +1,5 @@
 import "./payment.css";
-import {BsFillBalloonHeartFill} from "react-icons/bs"
+import { BsFillBalloonHeartFill } from "react-icons/bs";
 import { IoPizza } from "react-icons/io5";
 import { TbPizza } from "react-icons/tb";
 import { IoIosPizza } from "react-icons/io";
@@ -16,9 +16,13 @@ function Completion(props) {
       </div>
       <div className="text-container">
         <p className="smart-text-pizza">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat
-          omnis laboriosam sapiente reprehenderit nisi sed voluptatum earum!
-          Perferendis in ex dignissimos sequi quaerat!
+          We're thrilled that you ordered delicious pizza from our website! 🍕
+          Thank you so much for choosing us. Your order not only made our day
+          but also keeps us excited to serve you again in the future. We can't
+          wait to cook up more mouthwatering creations for you. If you ever
+          crave another slice or have any special requests, just know we're
+          here, ready to make your pizza dreams come true. Your next order is
+          something we're already looking forward to!
         </p>
       </div>
       <div className="icons-container">

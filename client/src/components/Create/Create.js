@@ -28,11 +28,14 @@ const Create = () => {
       );
       const { url } = uploadRes.data;
 
-      const response = await fetch("http://localhost:4000/api/create", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...pizzaDetails, img: url }),
-      });
+      const response = await fetch(
+        "https://pizza-backend-api-lvxo.onrender.com/api/create",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ ...pizzaDetails, img: url }),
+        }
+      );
       const data = await response.json();
       setData(data);
       setPizzaDetails({
