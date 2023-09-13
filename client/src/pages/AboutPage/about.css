@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Prata&family=Sedgwick+Ave+Display&display=swap");
+
+/* font-family: 'Amatic SC', cursive;
+font-family: 'Prata', serif;
+font-family: 'Sedgwick Ave Display', cursive; */
+.about-section {
+}
+.about-sub {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.right-side,
+.left-side,
+.center-side {
+  padding: 10px;
+  margin: 1rem;
+  width: 33%;
+}
+.right-side {
+  margin-left: -7rem;
+  font-family: "Amatic SC", cursive;
+  /* font-family: 'Prata', serif; */
+}
+.center-side {
+  margin-right: -5.3rem;
+}
+.divider {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  transform: rotate(270deg);
+}
+.chef {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+  border: 1px solid black;
+  border-radius: 50%;
+  /* background-image: url("../../assets/images/red-removed.png");
+  background-size: cover; */
+}
+.chef-header {
+  /* width: 100%; */
+  font-family: "Amatic SC", cursive;
+  text-align: center;
+  margin: 2rem 0 -3rem;
+}
+.our-top {
+  font-family: "Sedgwick Ave Display", cursive;
+}
+@media screen and (max-width: 950px) {
+ 
+      .right-side {
+    margin-left: -6%;
+  }
+  .center-side {
+    width: 30%;
+    margin: 0rem;
+  }
+  .about-sub {
+    flex-wrap: wrap;
+  }
+  .about-sub {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .right-side , .left-side , .center-side{
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .divider{
+      transform: rotate(0deg);
+      margin: -7rem 0;
+      margin-bottom: -11rem;
+
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .chef{
+      height: 300px;
+  }
+}

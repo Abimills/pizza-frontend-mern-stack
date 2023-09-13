@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Italianno&family=Prata&family=Sedgwick+Ave+Display&display=swap");
+/* font-family: 'Amatic SC', cursive; */
+/* font-family: 'Italianno', cursive; */
+/* font-family: 'Prata', serif; */
+/* font-family: 'Sedgwick Ave Display', cursive; */
+
+.cart-header {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-family: "Prata", serif;
+  margin: 0rem 0.2rem;
+  font-size: 1.6rem;
+  position: relative;
+  top: 10px;
+  margin-bottom: -6rem;
+  letter-spacing: 2px;
+  color: white;
+  background-image: url("../../assets/images/text-bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.nothing-cart {
+  width: 300px;
+  height: 300px;
+
+  font-family: "Prata", serif;
+
+  color: white;
+  margin-left: 50%;
+  margin-top: 20%;
+}
+.cart-container {
+  width: 70%;
+}
+.cart-order {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-family: "Amatic SC", cursive;
+  padding: 10px;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.underline {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+
+}
+.price {
+  /* font-family: 'Prata', serif; */
+  font-size: 0.8rem;
+  color: white;
+  font-family: "Prata", serif;
+}
+.close {
+  font-size: 1.4rem;
+  color: rgb(171, 7, 7);
+  margin-right: 0rem;
+}
+.total-container {
+  width: 100%;
+  gap: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.total {
+  width: 30%;
+  height:max-content;
+  background-color: white;
+  backdrop-filter: blur(1px);
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 3rem;
+  /* border-radius: 10px; */
+  /* border: 1px dotted black; */
+  /* margin-top: -5rem; */
+  margin-right: 1rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.subtotal-contain {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction: column;
+  
+}
+.subtotal-contain p {
+  font-family: "Prata", serif;
+  color: rgb(120, 120, 240);;
+  font-size: 1.3rem;
+  font-family: 'Amatic SC', cursive;
+
+}
+.total h3 {
+  font-family: "Prata", serif;
+  color: rgb(120, 120, 240);;;
+  font-size: 2rem;
+  font-family: 'Italianno', cursive;
+
+}
+
+.checkout {
+  width: 97%;
+  padding: 10px 40px;
+  margin: 0 1rem;
+  background-color: rgb(120, 120, 240);;;
+  border: 1px solid rgb(120, 120, 240);;
+  border-radius: 3px;
+  color: white;;
+  cursor: pointer;
+  font-size: .8rem;
+  font-family: "Prata", serif;
+}
+.subtotal {
+  font-family: "Prata", serif;
+  color: rgb(120, 120, 240);;
+}
+.total-price {
+  font-size: 1.5rem;
+  color: rgb(120, 120, 240);;
+}
+.line {
+  content: none;
+  width: 78%;
+  /* text-align: center; */
+  background-color: black;
+  height: 2px;
+  border-radius: 60px;
+  margin-left: 120px;
+}
+.size-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.size {
+  font-size: 0.7rem;
+  margin-top: -1rem;
+  color: black;
+  font-weight: 800;
+}
+.inc-dec-order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border: 1px solid white;
+  width: 100px;
+  height: 25px;
+  border-radius: 20px;
+}
+
+.inc,
+.dec {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.count-each {
+  color: white;
+  font-family: "Prata", serif;
+  font-size: 0.9rem;
+}
+
+.order-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.order-name {
+  font-family: "Prata", serif;
+  font-size: 0.8rem;
+  color: white;
+}
+@media screen and (max-width: 900px) {
+  .total-container {
+    width: 100%;
+gap: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .total {
+    width: 90%;
+    /* height: 300px; */
+    background-color: transparent;
+    backdrop-filter: none;
+    padding: 0px;
+    border: none;
+    align-items: flex-end;
+    margin-top: 0rem;
+  }
+  .total h3 {
+    display: none;
+  }
+  .checkout {
+    width: 100%;
+    background-color: rgb(120, 120, 240);;
+    padding: 10px;
+    color: white;
+    border: 1px solid rgb(120, 120, 240);;
+    margin-top: -2rem;
+  }
+  .subtotal-contain {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-right: 1rem;
+  }
+  .subtotal-contain p {
+    font-family: "Prata", serif;
+    color: white;
+    font-size: 0.8rem;
+  }
+  .cart-container {
+    width: 100%;
+  }
+  .order-name {
+    font-size: 0.6rem;
+    /* margin-bottom: 1rem; */
+  }
+  .size {
+    font-size: 0.7rem;
+    margin-top: -0.5rem;
+  }
+  .total-price {
+  font-size: 1.5rem;
+color: white;}
+}
+
+@media screen and (max-width: 600px) {
+  .size-price {
+    display: none;
+  }
+  .cart-order {
+    width: 100%;
+    gap: 3rem;
+  }
+  
+  .inc-dec-order {
+    gap: 0.5rem;
+    /* border: none; */
+    width: 70px;
+    font-size: 0.7rem;
+    height: 20px;
+  }
+  .line {
+    width: 98%;
+    height: 2px;
+    margin-left: 10px;
+  }
+  .close {
+    font-size: 1.4rem;
+    color: rgb(171, 7, 7);
+    margin-right: 0rem;
+  }
+  .price {
+    font-size: 0.6rem;
+  }
+  .count-each {
+    font-size: 0.7rem;
+  }
+  .order-img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .order-name {
+    font-size: 0.5rem;
+    margin-bottom: 1rem;
+    margin-left: -3rem;
+  }
+  .size {
+    font-size: 0.6rem;
+    margin-top: -0.5rem;
+    margin-left: -4rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .order-name {
+    margin: 0;
+    display: none;
+  }
+  .size {
+    margin: 0;
+    display: none;
+  }
+  .cart-order {
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    font-family: "Amatic SC", cursive;
+    padding: 10px;
+    justify-content: flex-start;
+    margin: 0.5rem;
+    
+  }
+  .cart-order *{
+    margin: 0;
+  }
+  .inc-dec-order{
+    margin-left: -4rem;
+  }
+  .cart-container{
+    width: 100%;
+
+  }
+  .subtotal-contain p {
+   
+    font-size: 0.7rem;
+  }
+  
+}
+
+@media screen and (max-width: 310px) {
+  .inc-dec-order{
+    margin-left: -5rem;
+  }
+  
+  .subtotal-contain p {
+   
+    font-size: 0.6rem;
+  }
+}

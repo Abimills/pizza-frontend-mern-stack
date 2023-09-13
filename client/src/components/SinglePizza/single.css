@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Italianno&family=Prata&family=Sedgwick+Ave+Display&display=swap");
+/* font-family: 'Amatic SC', cursive; */
+/* font-family: 'Italianno', cursive; */
+/* font-family: 'Prata', serif; */
+/* font-family: 'Sedgwick Ave Display', cursive; */
+
+.single-pizza-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.best-pizza-header {
+  font-family: "Italianno", cursive;
+  font-size: 2.5rem;
+  width: 350px;
+  height: 80px;
+  color: #078854;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../assets/images/text-bg.png");
+  background-size: cover;
+  margin-bottom: -1.5rem;
+  margin-top: -0.2rem;
+}
+.single-pizza-name {
+  font-size: 1.6rem;
+  font-family: "Prata", serif;
+  color: white;
+  margin-left: -10%;
+  margin-bottom: -1rem;
+  margin-top: 3rem;
+}
+.real-price {
+  color: white;
+  text-transform: capitalize;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-left: -26px;
+  margin-bottom: -1.5rem;
+  margin-top: 15px;
+  font-family: "Italianno", cursive;
+  font-size: 1.6rem;
+}
+.price-indiv {
+  font-size: 1rem;
+  font-family: "Prata", serif;
+  color: white;
+  /* margin-left: -50%; */
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  text-decoration: underline;
+}
+.number-pizza-container {
+  display: flex;
+  align-items: center;
+}
+.number-counter {
+  width: 50px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid white;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.single-pizza-description {
+  font-family: "Amatic SC", cursive;
+  width: 60%;
+  color: white;
+  margin-bottom: 2rem;
+}
+.size-price-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.pizza-size-contain {
+  /* margin-left: -50%; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.choose-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.choose-container span {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: -10px;
+  /* right:30px; */
+  /* background-color: red; */
+  /* background-image: url("../../assets/images/gray.png");
+  background-size: contain;
+  background-repeat: no-repeat; */
+  font-family: "Prata", serif;
+  z-index: -1;
+  color: white;
+  font-size: 1.3rem;
+  cursor: pointer;
+
+  font-family: "Italianno", cursive;
+}
+.small {
+  font-size: 2.5rem;
+  margin: 0 2rem;
+  cursor: pointer;
+}
+.medium {
+  font-size: 3.5rem;
+  margin: 0 2rem;
+  cursor: pointer;
+}
+.large {
+  font-size: 4.5rem;
+  margin: 0 2rem;
+  cursor: pointer;
+}
+.desc-written {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.desc-header {
+  margin-bottom: -0.6rem;
+  font-weight: 400;
+  color: rgb(1, 11, 31);
+  margin-left: -45%;
+  font-family: "Prata", serif;
+}
+.lefter-side {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -1rem;
+  margin-left: 3rem;
+  position: relative;
+  border: 2px dotted black;
+  border-radius: 5px;
+}
+.righter-side {
+  width: 30%;
+  height: 150px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin-left: 2rem; */
+}
+.blue {
+  /* position: absolute; */
+
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.pizza-indiv {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  position: absolute;
+  z-index: 1;
+  top: -100px;
+  left: 00px;
+}
+.peel {
+  width: 380px;
+  height: 380px;
+  object-fit: contain;
+  position: absolute;
+  top: -99px;
+  left: -40px;
+}
+.gray {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  position: relative;
+  top: 10px;
+  left: -200px;
+}
+@media screen and (max-width: 800px) {
+  .single-pizza-name {
+    font-size: 1.3rem;
+    color: white;
+    margin-left: 0%;
+    margin-bottom: 0rem;
+    margin-top: 3rem;
+  }
+  .pizza-indiv {
+    width: 250px;
+    height: 250px;
+    /* object-fit: cover;
+    position: absolute;
+    z-index: 1;
+    top: -100px;
+    left: 00px; */
+  }
+  .peel {
+    width: 350px;
+    height: 350px;
+    /* object-fit: contain;
+    position: absolute;
+    top: -90px;
+    left: -40px; */
+  }
+}
+@media screen and (max-width: 700px) {
+  .single-pizza-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    gap: 2rem;
+    flex-direction: column;
+  }
+  .lefter-side {
+    width: 90%;
+    margin-left: 0rem;
+  }
+  .righter-side {
+    width: 90%;
+    justify-content: center;
+    height: 150px;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+  }
+  .pizza-indiv {
+    width: 250px;
+    height: 250px;
+    z-index: 1;
+    left: 25%;
+  }
+  .peel {
+    width: 350px;
+    height: 350px;
+    /* object-fit: contain;
+    position: absolute;
+    left: -40px; */
+    top: -105px;
+    left: 16%;
+  }
+  .single-btn {
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 530px) {
+  .gray {
+    display: none;
+  }
+  .best-pizza-header {
+    font-family: "Italianno", cursive;
+    font-size: 2rem;
+    width: 200px;
+    height: 40px;
+    background-size: contain;
+    margin-bottom: 0rem;
+    background-repeat: no-repeat;
+    margin-top: 0rem;
+  }
+  .pizza-indiv {
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+    left: 21%;
+  }
+  .peel {
+    width: 300px;
+    height: 280px;
+    /* object-fit: contain;
+    position: absolute;
+    left: -40px; */
+    top: -105px;
+    left: 10%;
+  }
+  .desc-header {
+  margin-bottom: -0.6rem;
+  
+  margin-left: 0%;
+  font-size: .8rem;
+  font-family: "Prata", serif;
+}
+}
+
+@media screen and (max-width: 400px) {
+  .choose-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .choose-container span {
+    position: absolute;
+    width: 0px;
+    height: 00px;
+    top: -10px;
+    font-size: .9rem;
+  }
+  .small {
+    font-size: 1.5rem;
+    margin: 0 ;
+  }
+  .medium {
+    font-size: 2rem;
+   
+    margin: 0 1.5rem;
+  }
+  .large {
+    font-size: 3rem;
+  }
+  .real-price {
+  
+ 
+  width: 100px;
+  
+  padding: 5px 10px;
+  margin-left: 0px;
+  margin-bottom: 0rem;
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+
+.lefter-side {
+  width: 90%;
+  margin: 0;
+ 
+
+}
+
+.single-pizza-container{
+  margin: 0 auto;
+  
+}
+
+
+}
+@media screen and (max-width: 350px) {
+.lefter-side {
+  width: 90%;
+  margin: 0;
+  margin: 0 auto;
+  
+}
+
+.single-pizza-container {
+  width: 95%;
+  margin-left: 0.5rem;
+  
+}
+
+.pizza-indiv {
+    width: 140px;
+    height: 140px;
+    z-index: 1;
+    left: 21%;
+  }
+  .peel {
+    width: 200px;
+    height: 200px;
+    /* object-fit: contain;
+    position: absolute;
+    left: -40px; */
+    top: -105px;
+    left: 10%;
+  }
+}

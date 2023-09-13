@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Prata&family=Sedgwick+Ave+Display&display=swap");
+
+/* font-family: 'Amatic SC', cursive; */
+/* font-family: 'Prata', serif; */
+/* font-family: 'Sedgwick Ave Display', cursive; */
+.all-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pizza-form {
+  background-color: white;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+.pizza-form input {
+  width: 50%;
+  margin-bottom: 1rem;
+  font-family: "Amatic SC", cursive;
+  padding: 5px;
+  font-family: "Prata", serif;
+  /* font-family: 'Sedgwick Ave Display', cursive; */
+  height: 40px;
+  outline: none;
+  font-weight: 900;
+  font-size: 0.7rem;
+}
+.pizza-form h3 {
+  width: 100%;
+  font-family: "Amatic SC", cursive;
+  font-family: "Prata", serif;
+  text-align: left;
+  font-weight: 500;
+}
+.create-container {
+  width: 70%;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(8, 177, 109);
+  border-radius: 5px;
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+}
+.choose-img-container {
+  width: 53%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.img-uploader {
+  background-color: transparent;
+  position: absolute;
+  left: 80px;
+  opacity: 0;
+  width: 100%;
+  padding: 15px;
+  z-index: 1;
+}
+
+.upload-img {
+  background-color: transparent;
+
+  z-index: 0;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 15px;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+  /* background-color: blue; */
+  border: 1px solid gray;
+  font-family: "Prata", serif;
+}
+.img-uploader .button {
+  background-color: green;
+}
+.create-header {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Amatic SC", cursive;
+  color: white;
+}
+.upload-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.upload-container p {
+  color: rgb(8, 177, 109);
+  font-family: "Prata", serif;
+}
+.tick {
+  font-size: 2rem;
+  color: rgb(8, 177, 109);
+}
+.hint{
+  font-size:.9rem;
+ margin-top:-1rem;
+  font-family: 'Amatic SC', cursive;
+
+}
+.create {
+  padding: 10px;
+  width: 50%;
+  background-color: rgb(8, 177, 109);
+  border: 1px solid rgb(8, 177, 109);
+  color: white;
+  border-radius: 15px;
+  font-family: "Prata", serif;
+  cursor: pointer;
+}
+.create:hover {
+  background-color: transparent;
+  color: black;
+}
+
+@media screen and (max-width: 925px) {
+  .create-container {
+    width: 100%;
+    margin: 1rem;
+
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+  }
+  .pizza-form input {
+    width: 70%;
+  }
+  .upload-container p {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .pizza-form input {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-family: "Amatic SC", cursive;
+    padding: 5px;
+    font-family: "Prata", serif;
+    /* font-family: 'Sedgwick Ave Display', cursive; */
+    height: 30px;
+    outline: none;
+    font-weight: 900;
+    font-size: 0.6rem;
+  }
+  .upload-img {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .create-header {
+    display: none;
+  }.upload-img {
+    font-size: 0.7rem;
+    padding: 5px;
+  }
+  .create{
+    padding: 5px;
+    width: 90%;
+  }
+}

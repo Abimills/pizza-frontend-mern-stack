@@ -1,0 +1,554 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Italianno&family=Prata&family=Sedgwick+Ave+Display&display=swap");
+/* font-family: 'Amatic SC', cursive; */
+/* font-family: 'Italianno', cursive; */
+/* font-family: 'Prata', serif; */
+/* font-family: 'Sedgwick Ave Display', cursive; */
+.landing-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+}
+.pizza-card-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  transition: all ease-in-out 1s;
+}
+.filter-pizza {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+.land-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.land-header div {
+  display: flex;
+  align-items: center;
+}
+
+.choose-btn {
+  padding: 10px 25px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 30px;
+  font-family: "Prata", serif;
+  cursor: pointer;
+  transition: all ease-in-out 1s;
+}
+.choose-btn:hover {
+  background-color: transparent;
+  color: white;
+}
+.active-cat-btn {
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+}
+.chosen:hover {
+  color: black;
+  background-color: transparent;
+}
+
+.pizza-handle {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin-top: 0rem;
+  margin-right: -8.5rem;
+  z-index: 4;
+  transform: rotate(10deg);
+  border: 10px solid black;
+  border-radius: 50%;
+
+  /* background-color: red; */
+}
+.grey {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  position: absolute;
+  top: -100px;
+  right: 50px;
+}
+.bluer {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  position: absolute;
+  bottom: -50px;
+  right: 20px;
+  transform: rotate(-50deg);
+}
+.greener {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  /* margin-top: 1rem;; */
+  position: relative;
+  left: -180px;
+  bottom: -3rem;
+}
+.layered {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-left: -9rem;
+  z-index: 7;
+}
+.layer2 {
+  margin-top: -6rem;
+}
+.pizza-container {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-top: -2rem;
+}
+.semi-circle {
+  width: 44%;
+  height: 286px;
+  object-fit: contain;
+  transform: rotate(-2deg);
+  margin-left: -8.5rem;
+  /* display: none; */
+  /* opacity: 0; */
+}
+.slicer {
+  width: 105px;
+  object-fit: contain;
+  margin-top: 1rem;
+  margin-right: -2rem;
+  z-index: 6;
+  display: none;
+  transform: rotate(160deg);
+}
+.green {
+  margin-left: -10rem;
+  margin-top: 0;
+}
+.gue {
+  width: 120px;
+  object-fit: contain;
+  margin-top: 6rem;
+  margin-left: -0rem;
+  z-index: 5;
+  transform: rotate(200deg);
+}
+.coca-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.coca {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-left: -15rem;
+}
+
+.pizza-yari {
+  font-family: "Amatic SC", cursive;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: -3rem;
+  margin-top: -2rem;
+  max-width: 350px;
+  color: white;
+}
+.main-header {
+  text-align: center;
+  font-family: "Prata", serif;
+  font-size: 9rem;
+  font-family: "Italianno", cursive;
+  margin-bottom: -3rem;
+  margin-top: -3rem;
+  /* color:rgb(8, 177, 109); */
+  color: white;
+}
+.pizza-fam {
+  width: 800px;
+  height: 300px;
+  object-fit: cover;
+  margin: 1rem;
+}
+.service-header {
+  text-align: center;
+  font-family: "Prata", serif;
+  margin: 4rem;
+}
+.service-boxes {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+}
+.fam-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.fam-container p {
+  font-family: "Amatic SC", cursive;
+}
+.fam-container h3 {
+  font-family: "Italianno", cursive;
+  font-size: 2rem;
+}
+.collect {
+  width: 50px;
+  height: 70px;
+  object-fit: contain;
+  position: absolute;
+  top: -100px;
+  right: -100px;
+}
+.come {
+  right: -70px;
+  z-index: -1;
+}
+.greene {
+  width: 100px;
+  height: 200px;
+  object-fit: contain;
+  position: absolute;
+  bottom: -10rem;
+  left: 0;
+}
+
+.service-boxes button {
+  padding: 15px 40px;
+  background-color: transparent;
+  border: 1px solid rgb(8, 177, 109);
+  border-radius: 30px;
+}
+.service-boxes .one {
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+}
+.service-boxes .three {
+  background-color: rgb(8, 177, 109);
+  color: white;
+}
+.van-container {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  flex-wrap: wrap;
+  position: relative;
+}
+.discover {
+  /* width: 250px; */
+  padding: 10px 25px;
+  background-color: black;
+
+  border: 1px solid black;
+  font-family: "Amatic SC", cursive;
+
+  border-radius: 2px;
+  /* font-size:1.01rem; */
+  color: white;
+  margin-left: -1.7rem;
+  cursor: pointer;
+}
+.paparika-container {
+  position: relative;
+  width: 10px;
+}
+.paparika {
+  position: absolute;
+  top: -160px;
+  width: 40px;
+  height: 50px;
+  object-fit: contain;
+  z-index: 1;
+}
+.tomatoe {
+  width: 40px;
+  height: 50px;
+  object-fit: contain;
+  position: absolute;
+  top: -160px;
+  z-index: 0;
+  margin-left: 1rem;
+}
+.discover:hover {
+  color: rgb(8, 177, 109);
+}
+.main-header span {
+  font-size: 13rem;
+  font-family: "Italianno", cursive;
+}
+.choose-header {
+  font-family: "Amatic SC", cursive;
+  /* font-family: 'Prata', serif; */
+  font-family: "Sedgwick Ave Display", cursive;
+  text-align: center;
+}
+@media screen and (max-width: 950px) {
+  .land-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem;
+  }
+  .landing-container {
+    padding: 0px;
+    width: 95%;
+    margin: 0.5rem;
+  }
+  .main-header {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+  }
+  .main-header span {
+    font-size: 9rem;
+    font-family: "Italianno", cursive;
+  }
+  .pizza-word {
+    margin-top: -2rem;
+  }
+  .pizza-yari {
+    font-size: 1.1rem;
+    margin-bottom: -3rem;
+    margin-top: -3rem;
+    color: white;
+    width: 70%;
+  }
+  .coca-container {
+    width: 70%;
+    margin-top: 2rem;
+    height: 100px;
+  }
+  .coca {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    /* margin: 1rem; */
+    margin: 0;
+    /* margin-left: -15rem; */
+  }
+  .greener {
+    display: none;
+  }
+  .discover {
+    padding: 10px 25px;
+    border-radius: 2px;
+    margin-left: 0rem;
+    cursor: pointer;
+  }
+  .pizza-container {
+    width: 100%;
+    margin: 1rem;
+    margin-top: 0rem;
+  }
+  .pizza-handle {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 0rem;
+    z-index: 4;
+    border-radius: 50%;
+    background-color: rgb(11, 71, 57);
+  }
+  .semi-circle {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .van-container {
+    padding: 0;
+    width: 100%;
+  }
+  .collect {
+    width: 30px;
+    height: 50px;
+    right: -60px;
+  }
+  .service-boxes {
+    gap: 3rem;
+  }
+  .service-boxes button {
+    padding: 10px 15px;
+    font-size: 0.8rem;
+  }
+
+  .greene {
+    width: 50px;
+    height: 100px;
+    object-fit: contain;
+    position: absolute;
+    /* bottom: -10rem; */
+    left: 0;
+  }
+  .filter-pizza {
+    width: 100%;
+    gap: 3rem;
+    margin: 1rem;
+  }
+  .pizza-card-container {
+  width: 90%;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0 auto;
+
+}
+}
+@media screen and (max-width: 635px) {
+  .landing-container {
+    flex-wrap: wrap;
+    margin-bottom: 9rem;
+  }
+  
+  
+  .paparika {
+    top: -120px;
+    width: 20px;
+    height: 40px;
+  }
+  .tomatoe {
+    width: 20px;
+    height: 40px;
+    top: -120px;
+    margin-left: 0.3rem;
+  }
+  .main-header {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+  }
+  .filter-pizza {
+    width: 100%;
+    gap: 2rem;
+    margin: 1rem;
+     /* flex-wrap: wrap; */
+  }
+  .main-header span {
+    font-size: 9rem;
+    font-family: "Italianno", cursive;
+  }
+  .choose-btn {
+    padding: 8px 15px;
+    font-size: 0.8rem;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .choose-btn {
+    padding: 0;
+    font-size: 0.7rem;
+    width: 65px;
+    height: 27px;
+  }
+  .filter-pizza {
+    width: 95%;
+    gap: 1rem;
+    margin: 1rem;
+    flex-wrap: wrap;
+    margin-left: 0.2rem;
+     /* flex-wrap: wrap; */
+  }
+  /* .service-boxes button{
+    padding:0;
+     width: 100px;
+     height: 40px;
+  } */
+  .service-boxes .two {
+    display: none;
+  }
+  .collect {
+    display: none;
+  }
+  .pizza-fam {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin: 1rem;
+  }
+  .van-container {
+    width: 100%;
+  }
+  .service-header {
+    margin: 3rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .fam-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .fam-container p {
+    font-family: "Amatic SC", cursive;
+    font-size: 0.8rem;
+  }
+  .fam-container h3 {
+    font-family: "Italianno", cursive;
+    font-size: 1.4rem;
+  }
+  .service-boxes button {
+    font-size: 0.7rem;
+  }
+  .service-header {
+    margin: 2rem;
+    font-size: 1.8rem;
+  }
+  .main-header {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+  }
+  .main-header span {
+    font-size: 8rem;
+    font-family: "Italianno", cursive;
+  }
+  .pizza-yari {
+    font-size: 1rem;
+  }
+  .discover {
+    padding: 6px 30px;
+    border-radius: 2px;
+    margin-left: 0rem;
+    cursor: pointer;
+  }
+  .pizza-handle {
+    width: 180px;
+    height: 180px;
+    background-color: rgb(11, 71, 57);
+  }
+  .pizza-container {
+    width: 90%;
+    margin: 1rem;
+    margin-left: 2rem;
+  }
+  .layered {
+    width: 160px;
+    height: 160px;
+  }
+}
